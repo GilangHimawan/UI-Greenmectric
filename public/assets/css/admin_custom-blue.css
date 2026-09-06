@@ -1,0 +1,13 @@
+/* Catatan: file ini saat ini tidak di-load di halaman manapun (tidak ada <link> yang mereferensikannya).
+   Disamakan ke palet hijau brand utama agar tidak menyesatkan jika suatu saat digunakan kembali. */
+.navbar-blue {
+	background-color: #10b981 !important;
+    color: #fff;
+}
+.brand-link {
+	background-color: #10b981 !important;
+}
+
+.bg-primary {
+    background-color: #10b981 !important;
+}

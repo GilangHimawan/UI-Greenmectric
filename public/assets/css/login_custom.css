@@ -1,0 +1,56 @@
+/*
+ * Tema warna terpadu untuk halaman auth (login/register versi AdminLTE).
+ * Sebelumnya file ini memakai gradient merah (#f23a3a) yang tidak
+ * senada dengan halaman login utama (hijau emerald #10b981) maupun
+ * dengan skin admin panel. Disamakan ke satu palet hijau yang sama.
+ */
+:root {
+    --brand-primary: #10b981;
+    --brand-primary-dark: #059669;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid var(--brand-primary);
+}
+.card-title {
+    float: left;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: -13px;
+}
+
+a.nav-link {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+a.nav-link.active {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.bg-gradient-info {
+    background: var(--brand-primary) linear-gradient(180deg, var(--brand-primary), var(--brand-primary-dark)) repeat-x !important;
+    color: #fff;
+}
+
+.login-card-body, .register-card-body {
+    background-color: #fff;
+    border-top: 0;
+    color: #666;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bg-default {
+    background-color: #172b4d !important;
+    min-height: 100vh !important;
+}
+
+.main-content {
+    position: relative;
+}
+
+.halaman_awal .bg-gradient-primary {
+    background: linear-gradient(90.18deg, #10b981 -4.39%, #059669 132.48%) !important;
+}

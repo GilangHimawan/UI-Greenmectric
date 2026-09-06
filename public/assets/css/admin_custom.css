@@ -1,0 +1,154 @@
+/*
+ * Tema warna terpadu — UI Green Metric
+ * ---------------------------------------------------------------
+ * Sebelumnya file ini memakai warna biru muda (#b2ddf7) sementara
+ * konfigurasi skin AdminLTE (config/adminlte.php) memakai kelas
+ * "-success" (hijau) dan halaman login memakai gradient hijau
+ * emerald (#10b981). Kombinasi itu membuat tampilan tidak selaras
+ * antar halaman. File ini disamakan ke satu palet hijau emerald
+ * yang senada dengan branding "Green Metric".
+ */
+:root {
+    --brand-primary: #10b981;
+    --brand-primary-dark: #059669;
+    --brand-primary-darker: #047857;
+    --brand-primary-light: #d1fae5;
+    --brand-primary-lighter: #ecfdf5;
+    --brand-text-dark: #1f2937;
+}
+
+.wrapper .content-wrapper {
+    background: linear-gradient(
+        to bottom,
+        var(--brand-primary-light) 0px,
+        var(--brand-primary-light) 200px,
+        var(--brand-primary-lighter) 0%,
+        var(--brand-primary-lighter) 100%
+    );
+}
+
+.navbar-success, .navbar-blue {
+    background-color: var(--brand-primary) !important;
+    color: #ffffff;
+}
+
+.brand-link {
+    background-color: #ffffff !important;
+}
+
+[class*=sidebar-light] .brand-link {
+    border-bottom: 1px solid #ffffff;
+}
+
+.bg-primary {
+    background-color: var(--brand-primary) !important;
+    color: #ffffff !important;
+}
+
+.bg-primary, .bg-primary > a {
+    color: #ffffff !important;
+}
+
+.btn-primary {
+    background-color: var(--brand-primary) !important;
+    border-color: var(--brand-primary-dark) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--brand-primary-dark) !important;
+    border-color: var(--brand-primary-darker) !important;
+}
+
+.sidebar-dark-success .nav-sidebar > .nav-item > .nav-link.active,
+.sidebar-light-success .nav-sidebar > .nav-item > .nav-link.active,
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
+.sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: var(--brand-primary-lighter) !important;
+    color: var(--brand-primary-dark);
+}
+
+.card-primary:not(.card-outline) > .card-header,
+.card-success:not(.card-outline) > .card-header {
+    background-color: var(--brand-primary);
+}
+
+.card-danger:not(.card-outline) > .card-header {
+    background-color: var(--brand-primary);
+}
+
+[class*=sidebar-light] .brand-link, [class*=sidebar-light] .brand-link .pushmenu {
+    color: var(--brand-text-dark);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--brand-primary-lighter);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--brand-text-dark);
+}
+
+.brand-link {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.8125rem 0.5rem;
+    transition: width .3s ease-in-out;
+    white-space: nowrap;
+}
+
+.nav-sidebar > .nav-item .nav-icon.fa,
+.nav-sidebar > .nav-item .nav-icon.fab,
+.nav-sidebar > .nav-item .nav-icon.fad,
+.nav-sidebar > .nav-item .nav-icon.fal,
+.nav-sidebar > .nav-item .nav-icon.far,
+.nav-sidebar > .nav-item .nav-icon.fas,
+.nav-sidebar > .nav-item .nav-icon.ion,
+.nav-sidebar > .nav-item .nav-icon.svg-inline--fa {
+    font-size: 0.9rem;
+}
+
+[class*=sidebar-light] .user-panel {
+    border-bottom: 1px solid #ffffff;
+}
+
+.sidebar-collapse .brand-link {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.sidebar-collapse .brand-link .brand-image {
+    width: auto;
+    height: 100%;
+    margin-left: 14px;
+}
+
+.main-header {
+    border-bottom: 0px solid #dee2e6;
+    z-index: 1034;
+}
+
+.main-footer {
+    font-size: 11px;
+}
+
+/* Link & tombol umum mengikuti warna brand supaya senada dengan halaman login */
+a {
+    color: var(--brand-primary-dark);
+}
+a:hover {
+    color: var(--brand-primary-darker);
+}
+.badge-primary {
+    background-color: var(--brand-primary) !important;
+}
+.text-primary {
+    color: var(--brand-primary) !important;
+}

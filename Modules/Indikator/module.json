@@ -1,0 +1,13 @@
+{
+    "name": "Indikator",
+    "alias": "indikator",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Indikator\\Providers\\IndikatorServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
